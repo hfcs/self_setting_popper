@@ -56,9 +56,12 @@ down version that support gravity drop like the usual airsoft poppers.
 * Central switch
   * Foot activated guitar switch (press to connect) 7.5 RMB
   * 2 x 9 way RJ45 interface board (HL-RJ45-09) 53 x 2 RMB
-  * Trigger delayed relay module (5V version) 7.9 RMB
+  * Trigger delayed relay module (QF1025F 3V version) 7.9 RMB
   * Plastic case 9 RMB
-  * AA x 4 battery box 9 RMB
+  * 10k ohm pull up resistor
+  * 18650 battery box (2 in serial, with swtich and cover) 5.5 RMB
+    * We intended using 1 compartment only shorting out the rest
+  * 18650 Battery 15 RMB
 * Test harness
   * RJ45 socket -> jumper socket (10 pin version) 6.5 RMB
   * Switch
@@ -88,16 +91,20 @@ down version that support gravity drop like the usual airsoft poppers.
 ### Central switch
   * Trigger delayed relay module
     * Input
-      * DC in + -> Battery box +
-      * DC in - -> a) Battery box - b) Switch connector 1
+      * DC in + -> a) Battery box + b) one end of 10k ohm resistor
+      * DC in - -> a) Battery box - b) Switch connector 1 c) CON from output
       * IN -> Switch connector 2
     * Output
-      * COM -> Brown-white wire on RJ45 switch box (pin 7)
-      * NO -> Brown wire on RJ45 switch box (pin 8)
+      * COM -> a) Brown-white wire on RJ45 switch box (pin 7) b) DC in - from input
+      * NO -> a) Brown wire on RJ45 switch box (pin 8) b) one end of 10k ohm resistor
+  * Pull-up resistor
+    * Central switch now use 18650 to align the voltage of high input of the poppers, which are driven by pull-up resistor
+    * Since we use central switch and pull-up, we need to tie the ground of central switch and output to poppers
   * Adjust relay delay for 1-3 seconds just enough for poppers to settle
 
 ## Lesson Learnt
   * Switching from JST SM cable to RJ45 is a buy vs build decision, we can get more reliable outcome for cheap buying or sourcing RJ45 cables
+  * We should apply pull up resistor on relay output, servo controllers may power down or have bad connection that cause their input going low, which will drive all connected poppers to "up" position and stuck there.
 
 ## Reference
 * https://core-electronics.com.au/guides/getting-started-with-servos-examples-with-raspberry-pi-pico/
