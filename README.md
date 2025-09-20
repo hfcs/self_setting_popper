@@ -38,7 +38,7 @@ down version that support gravity drop like the usual airsoft poppers.
   * Use RJ45 socket, taking a TBD pair for the ground/input trigger for a locking connection easily sourcing off-the-shelf cable
 
 
-# Parts
+## Parts
 * Each popper
   * Servo mount: two (m4x10 screw + m4 nuts): 2.3 RMB
   * MG996R Servo 12.8 RMB
@@ -57,14 +57,26 @@ down version that support gravity drop like the usual airsoft poppers.
   * 2 x 9 way RJ45 interface board (HL-RJ45-09) 53 x 2 RMB
   * Trigger delayed relay module (5V version) 7.9 RMB
   * Plastic case 9 RMB
+  * AA x 4 battery box 9 RMB
 * Test harness
   * RJ45 socket -> jumper socket (10 pin version) 6.5 RMB
   * Switch
 
-# Popper
+## How the system works
+  * All sockets on the RJ45 switch box are tied together, pressing the switch (shorting) will trigger the relay
+  * The relay will drive input signal of each servo driver boards to low and drive the servo to "up" position. 
+  * After preset time the relay will disconnect and return the servo to "down" position
+
+## How to build 
+
+### RJ45 pin assignment
+  * Only use Brown, Brown-white pair
+  * Brown-white pair assign to ground, Brown assign to popper input
+
+### Popper
   * Servo driver board:
-    * Input signal -> RJ 45 Brown pin 8: Solder directly on board, or solider a jumper wire and plug into jumper socker on the RJ 45 wire
-    * Ground/- -> RJ 45 Brown-White pin 7: Solder directly on board, or solider a jumper wire and plug into jumper socker on the RJ 45 wire
+    * Input signal -> RJ45 Brown pin 8: Solder directly on board, or solider a jumper wire and plug into jumper socker on the RJ45 wire
+    * Ground/- -> RJ45 Brown-White pin 7: Solder directly on board, or solider a jumper wire and plug into jumper socker on the RJ45 wire
     * Output Signal -> Servo Signal (Yellow) : plug in pin on the board into header socket
     * Output + -> Servo + : plug in pin on the board into header socket
     * Output - -> Servo - : plug in pin on the board into header socket
