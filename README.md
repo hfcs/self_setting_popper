@@ -96,6 +96,9 @@ down version that support gravity drop like the usual airsoft poppers.
       * NO -> Brown wire on RJ45 switch box (pin 8)
   * Adjust relay delay for 1-3 seconds just enough for poppers to settle
 
+## Lesson Learnt
+  * Switching from JST SM cable to RJ45 is a buy vs build decision, we can get more reliable outcome for cheap buying or sourcing RJ45 cables
+
 ## Reference
 * https://core-electronics.com.au/guides/getting-started-with-servos-examples-with-raspberry-pi-pico/
 * https://randomnerdtutorials.com/raspberry-pi-pico-servo-motor-micropython
