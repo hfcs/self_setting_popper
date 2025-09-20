@@ -82,6 +82,15 @@ down version that support gravity drop like the usual airsoft poppers.
     * Output - -> Servo - : plug in pin on the board into header socket
     * Since we have a stable battery supplied power we can skip the capacitor across the input power
 
+### Central switch
+  * Trigger delayed relay module
+    * Input
+      * DC in + -> Battery box +
+      * DC in - -> a) Battery box - b) Switch connector 1
+      * IN -> Switch connector 2
+    * Output
+      * COM -> Brown-white wire on RJ45 switch box (pin 7)
+      * NO -> Brown wire on RJ45 switch box (pin 8)
 
 ## Reference
 * https://core-electronics.com.au/guides/getting-started-with-servos-examples-with-raspberry-pi-pico/
