@@ -45,6 +45,7 @@ down version that support gravity drop like the usual airsoft poppers.
   * Z shaped Servo steel cable pull rod 8.8RMB per 20 = 0.44 RMB
   * Adjustable Servo driver board (preferrable with header pins) 9.79 RMB 
   * RJ45 socket -> jumper socket (10 pin version) 6.5 RMB
+    * Can cost down to cheaper part as we still need to solder cable to board
   * 2p male -> female jumper cable 0.44 RMB (2.2 RMB for 5)
   * 18650 battery box (2 in serial, with swtich and cover) 5.5 RMB
     * We intended using 1 compartment only shorting out the rest
@@ -59,6 +60,16 @@ down version that support gravity drop like the usual airsoft poppers.
 * Test harness
   * RJ45 socket -> jumper socket (10 pin version) 6.5 RMB
   * Switch
+
+# Popper
+  * Servo driver board:
+    * Input signal -> RJ 45 Brown pin 8: Solder directly on board, or solider a jumper wire and plug into jumper socker on the RJ 45 wire
+    * Ground/- -> RJ 45 Brown-White pin 7: Solder directly on board, or solider a jumper wire and plug into jumper socker on the RJ 45 wire
+    * Output Signal -> Servo Signal (Yellow) : plug in pin on the board into header socket
+    * Output + -> Servo + : plug in pin on the board into header socket
+    * Output - -> Servo - : plug in pin on the board into header socket
+    * Since we have a stable battery supplied power we can skip the capacitor across the input power
+
 
 ## Reference
 * https://core-electronics.com.au/guides/getting-started-with-servos-examples-with-raspberry-pi-pico/
