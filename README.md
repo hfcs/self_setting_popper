@@ -43,6 +43,7 @@ down version that support gravity drop like the usual airsoft poppers.
   * Servo mount: two (m4x10 screw + m4 nuts): 2.3 RMB
   * MG996R Servo 12.8 RMB
   * Z shaped Servo steel cable pull rod 8.8RMB per 20 = 0.44 RMB
+    * Elastic rod acts as servo server
   * Adjustable Servo driver board (preferrable with header pins) 9.79 RMB 
   * RJ45 socket -> jumper socket (10 pin version) 6.5 RMB
     * Can cost down to cheaper part as we still need to solder cable to board
@@ -81,6 +82,8 @@ down version that support gravity drop like the usual airsoft poppers.
     * Output + -> Servo + : plug in pin on the board into header socket
     * Output - -> Servo - : plug in pin on the board into header socket
     * Since we have a stable battery supplied power we can skip the capacitor across the input power
+  * Mount servo steel cable pull rod on servo horn and secure it (e.g. with steel wire and tighten)
+  * Adjust each servo controllers such servo horn press hard on popper, flexing the steel cable pull rod a little bit
 
 ### Central switch
   * Trigger delayed relay module
@@ -91,6 +94,7 @@ down version that support gravity drop like the usual airsoft poppers.
     * Output
       * COM -> Brown-white wire on RJ45 switch box (pin 7)
       * NO -> Brown wire on RJ45 switch box (pin 8)
+  * Adjust relay delay for 1-3 seconds just enough for poppers to settle
 
 ## Reference
 * https://core-electronics.com.au/guides/getting-started-with-servos-examples-with-raspberry-pi-pico/
