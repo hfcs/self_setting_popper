@@ -89,6 +89,11 @@ There is a known commercial product in the market, yet the product does not supp
     * Output - -> Servo - : plug in pin on the board into header socket.
     * Since we have a stable battery supplied power we can skip the capacitor across the input power.
   * Mount servo steel cable pull rod on servo horn and secure it (e.g. with steel wire and tighten).
+  * Popper should attach to a hinge mounted on popper base plate, one can use industrial strength double side tape.
+  * Servo mount around 15-20 cm away from the hinge, directly under the popper.
+    * The servo mount also act as a riser for the popper to fall on.
+    * A riser is needed if popper is mounted on hinge using double sided tape to mitigate falling force that peel the popper out of the hinge.
+    * Make sure servo horn and steel cable pull rod are also placed directly under the popper.
   * Adjust each servo controllers such that servo horn press gently on popper, flexing the steel cable pull rod a little bit and act as servo saver.
 
 ### Central switch
