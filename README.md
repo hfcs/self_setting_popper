@@ -1,7 +1,7 @@
-# Self Setting Popper
+ # Self Setting Popper
 
 ## Problem Statement
-Airsoft competitive shooting use small poppers seating low the the ground, resetting such targets competitors and range officers kneeing or bending down. We intend to eliminate such toil automating the process. 
+Airsoft competitive shooting use small poppers seating low on the ground, resetting such targets competitors and range officers would be kneeing or bending down. We intend to eliminate such toil automating the process. 
 
 There is a known commercial product in the market, yet the product does not support "gravity drop on hit" and cost around 100 USD. We are seeking to build a cost down version that support gravity drop like the usual airsoft poppers.
 
