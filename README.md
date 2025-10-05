@@ -125,7 +125,8 @@ Note: the original reference prices were listed in CNY. All prices below have be
 
 ## Lesson Learnt
   * Switching from JST SM cable to RJ45 is a buy vs build decision, we can get more reliable outcome for cheap buying or sourcing RJ45 cables.
-  * We should apply pull up resistor on relay output, servo controllers may power down or have bad connection that cause their input going low, which will drive all connected poppers to "up" position and stuck there.
+  * We should apply pull up resistor on relay output for deterministic input and apply diode at servo controller input
+    * Servo controllers may power down or have bad connection that cause their input going low, without a diode the "dead popper" will drive all connected poppers to "up" position and stuck there.
 
 ## Reference
 * https://core-electronics.com.au/guides/getting-started-with-servos-examples-with-raspberry-pi-pico/
