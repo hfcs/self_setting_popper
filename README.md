@@ -45,6 +45,7 @@ There is a known commercial product in the market, yet the product does not supp
 | MG996R Servo                       | 1     | Come with servo horns                | 12.8                              |
 | Servo steel cable pul rod          | 1     | Elastic rod acts as servo saver      | 0.44                              |
 | Adjustable servo driver board      | 1     | Preferable with header pins          | 9.79                              |
+| Rectifier diode > 4.2 V            | 1     | Blcok controller backflow low signal | N/A                               |
 | RJ45 socket -> jumper socket cord  | 1     | 10 pin version                       | 6.5                               |
 | 2pin male -> female jumper capble  | 1     |                                      | 0.44                              |
 | 18650 battery box                  | 1     | Single battery box with header pins  | 5                                 |
@@ -82,7 +83,8 @@ There is a known commercial product in the market, yet the product does not supp
 
 ### Popper
   * Assemble servo driver board:
-    * Input signal -> RJ45 Brown pin 8: Solder directly on board, or solider a jumper wire and plug into jumper socker on the RJ45 wire.
+    * Input signal -> RJ45 Brown pin 8: Solder to cathode of diode
+    * Diode anode : Solder directly on board, or solider a jumper wire and plug into jumper socker on the RJ45 wire.
     * Ground/- -> RJ45 Brown-White pin 7: Solder directly on board, or solider a jumper wire and plug into jumper socker on the RJ45 wire.
     * Output Signal -> Servo Signal (Yellow) : plug in pin on the board into header socket.
     * Output + -> Servo + : plug in pin on the board into header socket.
