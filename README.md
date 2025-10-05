@@ -56,7 +56,7 @@ Note: the original reference prices were listed in CNY. All prices below have be
 | 18650 battery box                  | 1     | Single battery box with header pins  | 0.70                              |
 | 18650 battery                      | 1     |                                      | 2.10                              |
 | Cat 5 cable (15m)                  | 1     |                                      | 2.10                              |
-| PLC case (125x90x40mm)             | 1     |                                      | 0.70                              |
+| Plastic container (snack size)     | 1     | As case to cover battery (8cm)       | N/A                               |
 
 ### Central switch
 | Part                               | Count | Remark                               | Reference Price (USD from Taobao) |
