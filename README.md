@@ -39,40 +39,41 @@ There is a known commercial product in the market, yet the product does not supp
 
 
 ## Parts
+Note: the original reference prices were listed in CNY. All prices below have been converted to USD at 1 CNY = 0.14 (rate on 2025-10-05).
 
 ### Each popper
-| Part                               | Count | Remark                               | Reference Price (RMB yen, Taobao) |
+| Part                               | Count | Remark                               | Reference Price (USD from Taobao) |
 |----------------------------------- |-------|--------------------------------------|-----------------------------------|
-| Servo mount                        | 1     |                                      | 2.3                               |
+| Servo mount                        | 1     |                                      | 0.32                              |
 | M4x10 screw                        | 2     |                                      | N/A                               |
 | M4 nut                             | 2     |                                      | N/A                               |
-| MG996R Servo                       | 1     | Come with servo horns                | 12.8                              |
-| Servo steel cable pull rod         | 1     | Elastic rod acts as servo saver      | 0.44                              |
-| Adjustable servo driver board      | 1     | Preferable with header pins          | 9.79                              |
+| MG996R Servo                       | 1     | Come with servo horns                | 1.79                              |
+| Servo steel cable pull rod         | 1     | Elastic rod acts as servo saver      | 0.06                              |
+| Adjustable servo driver board      | 1     | Preferable with header pins          | 1.37                              |
 | Rectifier diode > 4.2 V            | 1     | Blcok controller backflow low signal | N/A                               |
-| RJ45 socket -> jumper socket cord  | 1     | 10 pin version                       | 6.5                               |
-| 2pin male -> female jumper capble  | 1     |                                      | 0.44                              |
-| 18650 battery box                  | 1     | Single battery box with header pins  | 5                                 |
-| 18650 battery                      | 1     |                                      | 15                                |
-| Cat 5 cable (15m)                  | 1     |                                      | 15                                |
-| PLC case (125x90x40mm)             | 1     |                                      | 5                                 |
+| RJ45 socket -> jumper socket cord  | 1     | 10 pin version                       | 0.91                              |
+| 2pin male -> female jumper capble  | 1     |                                      | 0.06                              |
+| 18650 battery box                  | 1     | Single battery box with header pins  | 0.70                              |
+| 18650 battery                      | 1     |                                      | 2.10                              |
+| Cat 5 cable (15m)                  | 1     |                                      | 2.10                              |
+| PLC case (125x90x40mm)             | 1     |                                      | 0.70                              |
 
 ### Central switch
-| Part                               | Count | Remark                               | Reference Price (RMB yen, Taobao) |
+| Part                               | Count | Remark                               | Reference Price (USD from Taobao) |
 |------------------------------------|-------|--------------------------------------|-----------------------------------|
-| Foot activated guitar switch       | 1     | press to connect                     | 7.5                               |
-| 9 way RJ45 interface board         | 1     | HL-RJ45-09                           | 53                                |
-| Trigger delayed relay module       | 1     | QF1025F 3V version                   | 7.9                               |
-| 4.3 inch display case              | 1     | Window opening 107*70mm              | 8                                 |
+| Foot activated guitar switch       | 1     | press to connect                     | 1.05                              |
+| 9 way RJ45 interface board         | 1     | HL-RJ45-09                           | 7.42                              |
+| Trigger delayed relay module       | 1     | QF1025F 3V version                   | 1.11                              |
+| 4.3 inch display case              | 1     | Window opening 107*70mm              | 1.12                              |
 | 10k ohm pull up resistor           | 1     |                                      | N/A                               |
-| 18650 battery box                  | 1     | Single battery box with header pins  | 5                                 |
-| 18650 battery                      | 1     |                                      | 15                                |
+| 18650 battery box                  | 1     | Single battery box with header pins  | 0.70                              |
+| 18650 battery                      | 1     |                                      | 2.10                              |
 
 ### Test harness
-| Part                               | Count | Remark                               | Reference Price (RMB yen, Taobao) |
+| Part                               | Count | Remark                               | Reference Price (USD from Taobao) |
 |------------------------------------|-------|--------------------------------------|-----------------------------------|
-| RJ45 socket -> jumper socket cord  | 1     | 10 pin version                       | 6.5                               |
-| Switch                             | 1     | press to connect                     | 7.5                               |
+| RJ45 socket -> jumper socket cord  | 1     | 10 pin version                       | 0.91                              |
+| Switch                             | 1     | press to connect                     | 1.05                              |
 
 ## How the system works
   * All sockets on the RJ45 switch box are tied together, pressing the switch (shorting) will trigger the relay.
