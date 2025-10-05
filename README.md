@@ -1,4 +1,4 @@
- # Self Setting Popper
+ # Auto‑Reset Airsoft Target
 
 ## Problem Statement
 Airsoft competitive shooting use small poppers seating low on the ground, resetting such targets competitors and range officers would be kneeing or bending down. We intend to eliminate such toil automating the process. 
@@ -16,20 +16,24 @@ There is a known commercial product in the market, yet the product does not supp
 * Software design:
   * Simple deployment by end user, simple maintainence by hobbyist.
 
-## Solution Scope
+## Scope
+
+| Item | Included | Excluded |
+|------|----------|----------|
+| Central foot‑switch trigger | ✔️ | Wireless or remote trigger |
 
 ## Functional Requirements
 * Gravity drop target
 * Setting without bending down
 
 ## Non Functional Requirements
-* Drop from 1 meter on hard surface
-* Software maintainable and deployable by hobbyist and student type of skills
+* Hardware and software both maintainable and deployable by hobbyist and student type of skills
 
 ## Design decisions and rationales
 * Use MG996R servo, MG90 micro servo are too weak to drive a light titanium mini-popper
   * Each target needs to have it's own 3-5v power supply, MG966R can take up to 2.5A stall current when peaking out
-* Use adjustable servo driver, a simpler way in production and operation to drive and adjust each servo mechanically than micro controller, the part just cost 1.5 USD.
+* Use adjustable servo driver as controller for servo instead of PWM module like PCA9685
+  * A simpler way in production and operation to drive and adjust each servo mechanically before deployment, the part just cost 1.5 USD.
 * Interface each adjustable servo driver with a 2 pins interface, ground, in signal (low level trigger)
   * Use RJ45 socket, taking a TBD pair for the ground/input trigger for a locking connection easily sourcing off-the-shelf cable
 
@@ -73,7 +77,7 @@ There is a known commercial product in the market, yet the product does not supp
 ## How the system works
   * All sockets on the RJ45 switch box are tied together, pressing the switch (shorting) will trigger the relay.
   * The relay will drive input signal of each servo driver boards to low and drive the servo to "up" position.
-  * After preset time the relay will disconnect and return the servo to "down" position.
+  * After preset time configured on the trigger delayed relay module, the relay will disconnect and return the servo to "down" position.
 
 ## How to build 
 
