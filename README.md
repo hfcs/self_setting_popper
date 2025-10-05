@@ -103,6 +103,11 @@ Note: the original reference prices were listed in CNY. All prices below have be
     * Make sure servo horn and steel cable pull rod are also placed directly under the popper.
   * Adjust each servo controllers such that servo horn press gently on popper.
     * Test by putting servo to up position and gently bend the cable pull rod further, observing the free play and servo horn remain the same angle.
+  * Note on popper physical build
+    * Popper bases are light compare to popper and easily wobbled when the heavy popper is resetted, belows are succesful mitigation the author applied on titanium poppers
+      * Mount popper at the center of the popper base
+      * Velcro the bottom of the popper base so the popper base attached to the carpetted range floor
+      * Weight down the popper base, 500g to 1kg is good enough
 
 ### Central switch
   * Assemble trigger delayed relay module:
