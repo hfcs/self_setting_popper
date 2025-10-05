@@ -43,7 +43,7 @@ There is a known commercial product in the market, yet the product does not supp
 | M4x10 screw                        | 2     |                                      | N/A                               |
 | M4 nut                             | 2     |                                      | N/A                               |
 | MG996R Servo                       | 1     | Come with servo horns                | 12.8                              |
-| Servo steel cable pul rod          | 1     | Elastic rod acts as servo saver      | 0.44                              |
+| Servo steel cable pull rod         | 1     | Elastic rod acts as servo saver      | 0.44                              |
 | Adjustable servo driver board      | 1     | Preferable with header pins          | 9.79                              |
 | Rectifier diode > 4.2 V            | 1     | Blcok controller backflow low signal | N/A                               |
 | RJ45 socket -> jumper socket cord  | 1     | 10 pin version                       | 6.5                               |
@@ -96,7 +96,8 @@ There is a known commercial product in the market, yet the product does not supp
     * The servo mount also act as a riser for the popper to fall on.
     * A riser is needed if popper is mounted on hinge using double sided tape to mitigate falling force that peel the popper out of the hinge.
     * Make sure servo horn and steel cable pull rod are also placed directly under the popper.
-  * Adjust each servo controllers such that servo horn press gently on popper, flexing the steel cable pull rod a little bit and act as servo saver.
+  * Adjust each servo controllers such that servo horn press gently on popper.
+    * Test by putting servo to up position and gently bend the cable pull rod further, observing the free play and servo horn remain the same angle.
 
 ### Central switch
   * Assemble trigger delayed relay module:
